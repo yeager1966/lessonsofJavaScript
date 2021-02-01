@@ -1,5 +1,33 @@
 "use strict";
 
+let nameMyFriend = "Olzhas";
+
+
+function sayHello() {
+    let message = "hello JavaScript" + nameMyFriend;
+    console.log(message);
+}
+sayHello(); // вызолв функции
+
+/////////////////////////////////////////////////////
+function simpleMath(a, b) {
+    let result = a + b;
+    console.log(result);
+}
+simpleMath(11, 77);
+
+/////////////////////////////////////////////////////
+function mathExample(a, b) {
+    let result = a + b;
+  return result;
+}
+let sum = mathExample(777 , 223);
+console.log(sum);
+
+/////////////////////////////////////////////////////
+
+
+
 let num = 20;
 
 function showMassage(text) { // функция , () аргументы  // function declaration 2
@@ -13,7 +41,7 @@ console.log(num);
 //////////////////////////////////////////////////////
 
 function calc(a, b) { // function declaration
-    return (a * b);
+    return (a * b); // возвращает результат фунции
 
 }
 console.log(calc(4, 3));
@@ -41,5 +69,5 @@ logger();
 
 //////////////////////////////////////////////////////
 
-const calculate = (a, b) => a+b; // функция стрелочная
-console.log(calculate(5,6));
+const calculate = (a, b) => a + b; // функция стрелочная
+console.log(calculate(5, 6));

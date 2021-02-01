@@ -6,9 +6,8 @@ console.log(result); */
 
  // alert('Salam');// предупреждение 
 
-
- /* const answer = prompt("Вы ещак и это факт" , "Да , знаю , простите"); // тип данных String , но можно изменить благодаря плюсику впереди  +prompt
- /* console.log(answer); */
+/* const answer = prompt("Вы ещак и это факт" , "Да , знаю , простите"); // тип данных String , но можно изменить благодаря плюсику впереди  +prompt
+console.log(answer);  */
  /*console.log(typeof(answer)); // мможем узнать тип данных об этой переменной  */
 
 

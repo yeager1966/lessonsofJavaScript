@@ -59,6 +59,9 @@ console.log(`Hello , ${name}`);
 
 
 
+
+/// преобразование типов
+
 let value = false;
 // console.log(typeof value); // boolean 
 
