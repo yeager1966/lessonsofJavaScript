@@ -26,8 +26,6 @@ console.log(sum);
 
 /////////////////////////////////////////////////////
 
-
-
 let num = 20;
 
 function showMassage(text) { // функция , () аргументы  // function declaration 2
