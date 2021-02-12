@@ -15,3 +15,5 @@ box.style.cssText = "background-color:pink; width: 100px; height:100px; border-r
 btns[1].style.borderRadius = "50%";
 circles[0].style.backgroundColor = "red";
 
+
+
