@@ -28,8 +28,3 @@ const oneHeart = document.querySelector("div"); // Получает самый �
 console.log(oneHeart);
 
 
-const box = document.getElementById("box"), // к айди
-    btns = document.getElementsByTagName("button"), // к тегу
-    circles = document.getElementsByClassName("circle"),// к классу
-    hearts = document.querySelectorAll(".heart"),// к селоктору с таким классом(псевдомассив)
-    oneHeart = document.querySelector(".heart");// к первому селектору(псевдомассив)

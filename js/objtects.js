@@ -1,31 +1,7 @@
 "use strict";
-const objects = {
-    name: "test", // name ключ , test значение 
-    width: 1024,
-    height: 1024,
-    colors: {
-        border: "black",
-        bg: " red "
-
-    },
-    makeTest: function () {
-        console.log("Test");
-    }
-
-};
-
-objects.makeTest();
-console.log(objects.name);
-
-// Деструктуризация
-const {border , bg} = objects.colors;
-console.log(border);
 
 
 
-
-// delete objects.name;
-// consol.log(objects);
 
 
 
@@ -43,29 +19,80 @@ const options = {
 };
 
 
+console.log(options["color"]["border"]);
 
 
-for (let key in options) {
-    if (typeof (options[key]) === "object") {
+
+// delete objects.name;
+// consol.log(objects);
+
+// Способ 1. Узнать количество свойств в объекте, благодаря итерации
+let counter = 0;
+//
+
+for (let key in options) { // обозначаем все свойства именем key в объекте
+    if (typeof (options[key]) === "object") { // если значение ключения будет объекта то будет перебор внутри перебора
         for (let i in options[key]) {
-            console.log(`Свойство ${i} имеет значение ${options[key] [i]}`);
+            console.log(`Свойство ${i} имеет значение ${options[key] [i]}`); // до стучилась до i
+        counter++;
         }
     } else {
-        console.log(`Свойство ${key} имеет значение ${options[key]}`);
+        console.log(`Свойство ${key} имеет значение ${options[key]}`); // если ключ не будет объектом то будет такое значение
+        counter++;
     }
 
 }
 
 
-
-
-
-
-
-const {border , bg} = options.color;
-console.log(border);
-
+//Способ 2. Ключи нашего объекта
 console.log(Object.keys(options).length); // метод встроенный в js
+
+/////////////////////////////////////////////////////////////////////////////////////
+
+
+const objects = {
+    name: "test", // name ключ , test значение 
+    width: 1024,
+    height: 1024,
+    colors: {
+        border: "black",
+        bg: " red "
+
+    },
+    makeTest: function () { // тут мы создали свой метод
+        console.log("Test");
+    }
+
+};
+
+objects.makeTest();
+console.log(objects.name);
+
+// Деструктуризация
+
+/* Как видно, свойства options.title, options.width и options.height автоматически присвоились соответствующим переменным. */
+
+let dist = {
+  title: "Меню",
+  width: 100,
+  height: 200
+};
+
+let {title, width, height} = dist;
+
+alert(title);  // Меню
+alert(width);  // 100
+alert(height); // 200
+
+
+/* const {border , bg} = objects.colors;
+console.log(border); */
+
+
+
+
+
+
 
 ////////////////////////////////////////////////////////////////////////////////
 
