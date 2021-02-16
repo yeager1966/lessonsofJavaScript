@@ -1,17 +1,5 @@
 "use strict";
 
-const arr = [2, 6, 4, 8, 10];
-arr.sort(compareNum); // сортировка чисел благодаря функции
-console.log(arr);
 
-function compareNum( a , b ){ 
-    return a - b ;
-} // сортировка чисел благодаря функции
- 
+// Псевдомассив - это такой же объект как массив , структура как у массива , и мы получаем со страницы. Но у него нет вообще методов
 
-const str = prompt("" , "");
-const products = str.split(" , ");
-
-products.sort(); // сортировка строк по алфавиту
-
-console.log(products.join(" ; ")); // объяденение массива

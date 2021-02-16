@@ -44,7 +44,7 @@ const Reiner = Object.create(warrior);
 
 
 
-/* Object.setPrototypeOf(Reiner , warrior);  ТОЖЕ КАК ВАРИАНТ*/
+Object.setPrototypeOf(Reiner , warrior);  /* ТОЖЕ КАК ВАРИАНТ*/
 
 
 

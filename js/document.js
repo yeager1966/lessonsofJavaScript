@@ -1,7 +1,7 @@
 "use strict";
 // работа с элементами на странице , методы и свойства документа(Объект)
-const box = document.getElementById("box");
-
+const box = document.getElementById("box"); // обращанение к айди
+ 
 console.log(box);
 
 
@@ -12,12 +12,12 @@ console.log(btns);
 const circle = document.getElementsByClassName("box");
 console.log(circle);
 
-
+// современный формат
 const header = document.querySelector(".header"); // ищет в html файле первый селектор , лучше юзать его 
 console.log(header);
 
-const navLinks = document.querySelectorAll(".nav__link"); // ищет в html файле все селекторы с таким классом
-console.log(navLinks);
+const hearts = document.querySelectorAll(".heart"); // ищет в html файле все селекторы с таким классом
+console.log(hearts); // у него есть метод forEach
 
 
 hearts.forEach(item => {

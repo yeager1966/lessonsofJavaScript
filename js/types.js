@@ -39,9 +39,9 @@ if (switcher){
 
 switcher = 1;
 if (switcher){
-    console.log("Working...");
+    console.log("nOT...");
 } 
 //2)
 console.log(typeof(Boolean("4")));
 //3)
-console.log(typeof(!!"444"));
+console.log(typeof(!"444"));
