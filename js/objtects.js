@@ -1,8 +1,46 @@
 "use strict";
 
+const user = {
+    firstName: " Danil ",
+    age: 19,
+    isAdmin: true,
+    email: "test@test.com",
+    'user-addres': { // большой ключ
+        city: "Almaty"
+    }, 
+    skills: ['html', 'css' , 'js' , 'react']
+};
+
+let value;
+
+let prop = "skills"; // Создаем перемен с названием свойства объекта
+
+value = user.firstName;
+value = user['isAdmin']; // для большых ключей
+value = user['user-addres'];
+value = user['user-addres'].city;
+/* value = user['user-addres']['city']; */ // Второй вариант
+
+value = user[prop]; // подставляем переменную с названием объекта
+value = user[prop][0];
+
+// Перезаписать свойства в объект
+
+user.firstName = "Ivan";
+value = user.firstName; // Иван
+user['user-addres'].city = "Kiev";
 
 
+// Создаем новый не существующий объект внутри существующего 
 
+user.plan = {};
+user.plan.A = 10;
+user.plan.B = 15;
+
+value = user.plan;
+
+console.log(user);
+console.log(value);
 
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -97,7 +135,41 @@ console.log(border); */
 ////////////////////////////////////////////////////////////////////////////////
 
 
+/* 
+Все поля добавлять по очереди, не создавать сразу готовый объект со всеми полями.
+
+Вопросы к этому заданию
+Создать объект с полем product, равным ‘iphone’
+
+Добавить в объект поле price, равное 1000 и поле currency, равное ‘dollar’
+
+Добавить поле details, которое будет содержать объект с полями model и color
+ */
 
 
+ const obj  = {
+    product: "Iphone",
+    price: "1000",
+    currency: "dollar",
+    detail: {
+        model: "Xr",
+        color: "white"
+    }
+ };
 
+ // или
+ /* Создать объект с полем product, равным ‘iphone’ */
 
+ const item = { 
+     product: "iPhone"
+ };
+
+/*  Добавить в объект поле price, равное 1000 и поле currency, равное ‘dolla */
+
+item.price = 1000;
+item.currency = "dollar";
+
+/* Добавить поле details, которое будет содержать объект с полями model и color */
+item.details = {};
+item.details.model = "XR";
+item.details.color = "Red";
