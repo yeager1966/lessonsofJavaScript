@@ -212,7 +212,7 @@ const price = parseFloat(item.price);
 const discount = parseFloat(item.discount);
 
 
-if (price && discount != isNaN) { // если прайс и скидка не равняется проверка на Nan
+if (!isNaN(price) && !isNaN(discount )) { // если прайс и скидка не равняется проверка на Nan
     item.priceWithDiscount = "85$";
     const newPrice = parseFloat(item.priceWithDiscount);
     console.log(item.priceWithDiscount);
