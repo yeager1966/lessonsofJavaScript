@@ -3,6 +3,32 @@
 
 /* Аналог метода мэп, он возвращает новый массив */
 
+
+function first(y) {
+    console.log(1);
+    y();
+}
+
+function second(a, b) {
+    console.log(a * b);
+}
+first(function () {
+    console.log(100 * 4);
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 const arr = ["Denis", "Den", "Olzhas", "Oleg"];
 // [ 5  , 3 , 6 ,4]
 

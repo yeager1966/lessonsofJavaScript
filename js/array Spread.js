@@ -1,5 +1,76 @@
 "use strict";
 
+// копия объекта не изменяя основного (поверхнастная копия)
+let obj1 = {
+    name: "Denis",
+};
+
+let obj2 = {
+    age: 20
+};
+
+let newObj = Object.assign({}, obj1, obj2); // поверхнастная копия
+console.log(newObj);
+
+// let newObj = Object.assign(obj1, obj2);
+// console.log(newObj === obj1); // true
+
+// глубокая копия объекта 
+let object = {
+    name: "Danil",
+    lastname: "Dickout",
+    age: 19,
+    info: {
+        job: "software-enginere of GOOGLE",
+        wife: "Angelina"
+    }
+};
+
+let objJson = JSON.stringify(object);
+let newObject = JSON.parse(objJson); // глубокая копия 
+// let newObject = JSON.parse(JSON.stringify(objJson)); // глубокая копия 
+console.log(newObject);
+
+
+
+// СДЕЛАТЬ ИЗ ОБЪЕКТА МАССИВ
+
+let keys = Object.keys(object); // только ключи
+console.log(keys);
+
+let values = Object.values(object); // ключи и значение
+console.log(values);
+
+let entries = Object.entries(object); // массив массивов, с ключа и значениями
+console.log(entries);
+
+
+
+// из массива массивов  - делает объект
+// let fromEntries = Object.fromEntries([["name" , "danil"] , ["age" , "19"]]);
+
+let fromEntries = Object.fromEntries(entries);
+console.log(fromEntries);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 let a = 5,
     b = a;
 
@@ -118,7 +189,7 @@ const num = [2, 5, 7];
 log(...num);
 
 //////////////////////////////////////////
-const array = ["A" , "B" , "C"];
+const array = ["A", "B", "C"];
 const newarray = [...array];
 console.log(newarray);
 
@@ -126,10 +197,12 @@ console.log(newarray);
 //////////////////////////////////////////
 
 const q = {
-    one: 1 , 
+    one: 1,
     two: 2
 };
 
-const newObj= {...q};
+const newObj = {
+    ...q
+};
 console.log(newObj);
 ///////////////////////////////////////////

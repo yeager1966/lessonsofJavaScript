@@ -7,8 +7,8 @@ const user = {
     email: "test@test.com",
     'user-addres': { // большой ключ
         city: "Almaty"
-    }, 
-    skills: ['html', 'css' , 'js' , 'react']
+    },
+    skills: ['html', 'css', 'js', 'react']
 };
 
 let value;
@@ -72,7 +72,7 @@ for (let key in options) { // обозначаем все свойства им�
     if (typeof (options[key]) === "object") { // если значение ключения будет объекта то будет перебор внутри перебора
         for (let i in options[key]) {
             console.log(`Свойство ${i} имеет значение ${options[key] [i]}`); // до стучилась до i
-        counter++;
+            counter++;
         }
     } else {
         console.log(`Свойство ${key} имеет значение ${options[key]}`); // если ключ не будет объектом то будет такое значение
@@ -83,7 +83,7 @@ for (let key in options) { // обозначаем все свойства им�
 
 
 //Способ 2. Ключи нашего объекта
-console.log(Object.keys(options).length); // метод встроенный в js
+console.log(Object.keys(options).length); // метод встроенный в js , узнать количество ключей в объекте
 
 /////////////////////////////////////////////////////////////////////////////////////
 
@@ -106,27 +106,6 @@ const objects = {
 objects.makeTest();
 console.log(objects.name);
 
-// Деструктуризация
-
-/* Как видно, свойства options.title, options.width и options.height автоматически присвоились соответствующим переменным. */
-
-let dist = {
-  title: "Меню",
-  width: 100,
-  height: 200
-};
-
-let {title, width, height} = dist;
-
-alert(title);  // Меню
-alert(width);  // 100
-alert(height); // 200
-
-
-/* const {border , bg} = objects.colors;
-console.log(border); */
-
-
 
 
 
@@ -147,7 +126,7 @@ console.log(border); */
  */
 
 
- const obj  = {
+const obj = {
     product: "Iphone",
     price: "1000",
     currency: "dollar",
@@ -155,14 +134,14 @@ console.log(border); */
         model: "Xr",
         color: "white"
     }
- };
+};
 
- // или
- /* Создать объект с полем product, равным ‘iphone’ */
+// или
+/* Создать объект с полем product, равным ‘iphone’ */
 
- const item = { 
-     product: "iPhone"
- };
+const item = {
+    product: "iPhone"
+};
 
 /*  Добавить в объект поле price, равное 1000 и поле currency, равное ‘dolla */
 
