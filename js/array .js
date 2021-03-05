@@ -273,7 +273,7 @@ console.log(strings.join(";")); /*  .join() метод. В кавычки пиш
 
 // отсортировка чисел 
 
-const a = [1, 44, 32, 56, 34, 12];
+const a = [1, 1000, 21, 30, 4];
 a.sort(compareNum);
 console.log(a);
 
