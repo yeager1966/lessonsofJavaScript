@@ -30,9 +30,9 @@ const btn2 = document.querySelector(".button2");
 let i = 0;
 const deleteElement = (e) => {
     console.log("Было и не стало");
-    i++
+    i++;
     if (i == 1) {
-        btn2.removeEventListener("click", deleteElement)
+        btn2.removeEventListener("click", deleteElement);
     }
 };
 
@@ -42,7 +42,7 @@ btn2.addEventListener("click", deleteElement); // Сначало создает�
 
 link.addEventListener("click", function (e) {
     e.preventDefault(); // метод
-    console.log("click")
+    console.log("click");
 })
 
 // при клике удаление

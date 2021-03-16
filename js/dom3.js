@@ -2,12 +2,12 @@
 
 const title1 = document.querySelector("h1");
 const div = document.querySelector("div");
-const content = document.querySelector(".content")
+const content = document.querySelector(".content");
 
 
-title1.innerHTML = "<span>text</span>" // если присвоить пустую строку то содержимое будет удалено , но опасно
+title1.innerHTML = "<span>text</span>"; // если присвоить пустую строку то содержимое будет удалено , но опасно
 title1.textContent = "<span>text</span>"; // перезапишутся в виде текста
-title1.insertAdjacentHTML("beforebegin", "<h2>H2 TITLE</h2>")
+title1.insertAdjacentHTML("beforebegin", "<h2>H2 TITLE</h2>");
 
 // Создание элемента 
 
